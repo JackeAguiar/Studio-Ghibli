@@ -1,14 +1,14 @@
 
 export default () => {
 
-    const infoCards = document.createElement('div');
-    infoCards.classList.add("cards")
+    const infoCard = document.createElement('div');
+    infoCard.classList.add("cards")
 
 
     fetch('https://ghibliapi.herokuapp.com/films')
         .then(response => response.json())
         .then(data => {
-            data.map(movie => {
+            data.forEach(movie => {
                 const card = `<div class="info-cards">
                 <div class="imge-and-title">
                 <img class="img-card" src="${movie.image}"/>
@@ -21,17 +21,16 @@ export default () => {
                 <p><strong> Description: </strong> ${movie.description}</p>
                 </div>`
 
+                infoCard.innerHTML = card
 
             }).catch(err => {
                 const errorMessage = document.createElement('h1');
                 errorMessage.textContent = `Essa não! Não está funcionando!`
-                infoCards.appendChild(errorMessage);
+                errorMessage;
             });
         })
-    return infoCards
-
-
-    
+    return infoCard
+     
 
 }
 
