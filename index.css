@@ -9,8 +9,13 @@
     list-style-type: none;
 }
 
+#card-div{
+    height: 100%;
+    width: 100%;
+}
 
 .nav{
+    margin-bottom: 5%;
     height: 100px;
     width: 100%;
     border-bottom: 1px solid #808080;
