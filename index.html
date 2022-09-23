@@ -5,33 +5,46 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Studio Ghibli</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./pages/home/home.css">
-    <link rel="stylesheet" href="./pages/films/films.css">
-    <link rel="stylesheet" href="./pages/characters/characters.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/films.css">
+    <link rel="stylesheet" href="./style/characters-and-locations.css">
 
 </head>
+<header class="header">
+    <nav class="nav">
+        <ul class="ul">
+            <li class="list"><a class="a" href="#/">Studio Ghibli</a></li>
 
-<body>
-    <header>
-        <nav class="nav">
-            <ul class="ul">
-                <li class="list"><a class="a" href="#/">Studio Ghibli</a></li>
+            <li class="list"><a class="a" href="#/films">Films</a></li>
 
-                <li class="list"><a class="a"  href="#/films">Films</a></li>
+            <li class="list"><a class="a" href="#/characters">Characters</a></li>
 
-                <li class="list"><a class="a"  href="#/characters">Characters</a></li>
+            <li class="list"><a class="a" href="#/locations">Locations</a></li>
 
-                <li class="list"><a class="a" href="#/locations">Locations</a></li>
+        </ul>
+    </nav>
+</header>
 
-            </ul>
-        </nav>
-    </header>
+<section class="section-input">
+    <input type="search" class="search" id="test" placeholder="Search" autofocus />
 
-    <!-- <main id="main" class="main"></main> -->
-    <div id="card-div"></div>
+    <select id="inputSelect" class="inputs" >
+    <option selected disabled value="">Sort by:</option>
+    <option value="A-Z">A-Z</option>
+    <option value="Z-A">Z-A</option>
+    <option value="Highest-Score">Highest score</option>
+    <option value="Lowest-Score">Lowest score</option>
+    <option value="Newest">Newest</option>
+    <option value="Oldest">Oldest</option>
+  </select>
 
-    <footer class="footer">
+</section>
+
+<main id="main" class="main"></main>
+<!-- <div id="card-div"></div> -->
+
+<footer class="footer">
         <ul class="ul">
             <li class="list">
                 <p class="a">Create by <a class="a" href="https://github.com/JackeAguiar" target="_blank" rel="noreferrer">Jackeline Aguiar</a></p>
@@ -39,7 +52,7 @@
         </ul>
     </footer>
 
-    <script type="module" src="./pages/locations/locations.js"></script>
+<script type="module" src="./main.js"></script>
 </body>
 
 </html>

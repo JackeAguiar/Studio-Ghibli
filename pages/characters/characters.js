@@ -8,10 +8,10 @@ export default () => {
             let card = data;
             console.log(card)
 
-            let CarDiv = document.createElement("div");
-            CarDiv.innerHTML = ` 
+            let carDiv = document.createElement("div");
+            carDiv.classList.add("card-div")
+            carDiv.innerHTML = ` 
             ${card?.map((people) => `
-    <div class="flex">
         <div class="info-cards">
             <div class="card-details">
                 <p><strong> Name: </strong>${people.name}</p>
@@ -20,8 +20,7 @@ export default () => {
                 <p><strong> Eyes color: </strong> ${people.eye_color}</p>
                 <p><strong> Hair color: </strong> ${people.hair_color}</p>
             </div>
-        </div>
-     </div>   
+        </div>   
       `).join("")
         }`
     })
@@ -31,14 +30,3 @@ export default () => {
 
 }
 
-
-
-
-{/* <select class="director" id="director">
-    <option selected value="none">Directors</option>
-    <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-    <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-    <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-    <option value="Isao Takahata">Isao Takahata</option>
-    <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-    </select> */}

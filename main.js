@@ -3,7 +3,7 @@ import films from "./pages/films/films.js";
 import characters from "./pages/characters/characters.js";
 import location from "./pages/locations/locations.js";
 
-let main = document.querySelector('#main');
+let main = document.getElementById('main');
 
 const init = () => {
     window.addEventListener('hashchange', () => {
@@ -33,3 +33,10 @@ window.addEventListener("load", () => {
     main.appendChild(home());
     init()
 })
+
+
+const input = document.querySelector("#test")
+
+if(" " == home()){
+    input.classList.remove("search")  
+}

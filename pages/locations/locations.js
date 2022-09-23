@@ -2,17 +2,17 @@ export default () => {
 
     const url = 'https://ghibliapi.herokuapp.com/locations';
     fetch(url)
-        .then((response) => {
-            return response.json();
+    .then((response) => {
+        return response.json();
     })
-        .then((data) => {
+    .then((data) => {
             let card = data;
             console.log(card)
 
-            let CarDiv = document.getElementById("card-div");
-            CarDiv.innerHTML = ` 
+            let carDiv = document.createElement("div");
+            carDiv.classList.add("card-div")
+            carDiv.innerHTML = ` 
             ${card?.map((location) => `
-    <div class="flex">
         <div class="info-cards">
             <div class="card-details">
                 <p><strong> Name: </strong>${location.name}</p>
@@ -20,14 +20,12 @@ export default () => {
                 <p><strong> Terrain: </strong> ${location.terrain}</p>
                 <p><strong> Surface water: </strong> ${location.surface_water}</p>
             </div>
-        </div>
-     </div>   
-      `).join("")
-        }`
-    })
-    .catch(function(error) {
-    console.log(error);
-    });
-    
+        </div>  
+     `).join("")
+    }`
+})
 
+.catch(function(error) {
+    console.log(error);
+})
 }

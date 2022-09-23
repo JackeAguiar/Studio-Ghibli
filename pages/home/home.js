@@ -4,7 +4,7 @@ export default () => {
     container.classList.add("containerMain");
 
     const template = `
-    <img src="logo.svg"/>
+    <img src="./imgs/Studio_Ghibli.svg"/>
 
     <section class="text">
     <h1>Studio Ghibli’s Origins</h1><br>

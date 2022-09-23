@@ -9,7 +9,7 @@
     list-style-type: none;
 }
 
-.main{
+.main {
     width: 100%;
     height: 100%;
     padding: 5%;
@@ -17,19 +17,19 @@
 }
 
 .containerMain {
-    height: 100%;
+    min-height: 75vh;
+    background-color: #efefef;
     width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+
 
 }
 
-.text{
+.text {
     margin: 3%;
     font-family: 'Nunito';
     font-size: medium;
     display: flex;
     flex-direction: column;
 }
-
-/* .text-origin{
-   align-self: center; 
-} */
