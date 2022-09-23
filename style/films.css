@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 
-#card-div {
+.main {
     margin: auto;
     width: 70vw;
+    margin-top: 4vh;
     margin-bottom: 4vh;
     background-color: #ffffff;
     padding: 5vmin;
@@ -44,7 +45,7 @@
     border-radius: 5px;
 }
 
-.title{
+.title {
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
@@ -59,4 +60,16 @@
     border-radius: 5px;
     justify-content: space-between;
     padding: 20px 0 40px 1vw;
+}
+
+@media (max-width: 767px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .img-card {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
 }
