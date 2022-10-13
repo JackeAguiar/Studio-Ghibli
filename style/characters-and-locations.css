@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+.info-cards {
+    margin: 5%;
+    height: 20%;
+    font-family: "Nunito";
+    color: #000000;
+    background-color: #84cec6;
+    border-radius: 10px;
+}
+
+.card-details {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 5%;
+}

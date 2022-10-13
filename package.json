@@ -1,0 +1,25 @@
+{
+  "name": "frontend-test",
+  "version": "1.0.0",
+  "description": "Teste da Clubbi para frontend",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve",
+    "deploy": "gh-pages -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackeAguiar/frontend-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackeAguiar/frontend-test/issues"
+  },
+  "homepage": "https://github.com/JackeAguiar/frontend-test#readme",
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "serve": "^14.0.1"
+  }
+}
